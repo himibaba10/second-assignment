@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto Slab', serif;
-    font-size: 17px;
 }
 
 h1,h2,h3 {
@@ -11,7 +10,9 @@ h1,h2,h3 {
 span {
     color: #76C27E;
 }
-
+.side-img {
+    width: 480px;
+}
 .btn-color {
     background-color: #2A1E59;
     color: white;
@@ -19,10 +20,7 @@ span {
 }
 .nav-item a{
     color:black;
-    font-size: 20px;
-}
-.img-width {
-    width: 70px;
+    font-size: 18px;
 }
 
 .font-sizing {
@@ -53,7 +51,20 @@ span {
 
 @media (max-width: 800px) {
     .side-img {
-        width: 450px;
+        width: 300px;
         margin-left: -90px;
     }
+    .banner-img {
+        width: 300px;
+        margin-left: -35px;
+    }
+    .top {width: 50px;}
+}
+
+@media (max-width: 1212px) {
+    .side-img {
+        width: 375px;
+        margin-left: -90px;
+    }
+    
 }
