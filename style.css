@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto Slab', serif;
+    margin: 5px;
+    padding: 10px;
 }
 
 h1,h2,h3 {
@@ -39,6 +41,9 @@ span {
     width: 120px;
 }
 
+.accesories-img {
+    width: 100px;
+}
 .div-col-border {
     background-color: #F1F1F1;
     border-radius: 25px;
@@ -47,6 +52,12 @@ span {
 .card-footer {
     background-color: white;
     border-top: none;
+}
+
+.footer-sec{
+    height: 400px;
+    background-image: linear-gradient(45deg,#b007b0,#db9b9b);
+    color: white;
 }
 
 @media (max-width: 800px) {
