@@ -1,0 +1,1027 @@
+/* Global styles */
+:root {
+  --text-black: #0b0223;
+  --text-gray: #534c64;
+  --text-primary: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+  --text-gradient: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  max-width: 1440px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.margin-bottom {
+  margin-bottom: 80px;
+}
+
+.text-gradient {
+  background-image: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-primary {
+  background: var(--text-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  border: none;
+  background: var(--text-primary);
+  color: white;
+  border-radius: 45px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.light-blue {
+  background: #4ec5f7;
+}
+
+.white {
+  background: white;
+  color: #ff42a5;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* header styles */
+header {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .logo > span {
+  color: var(--text-black);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav .logo img {
+  max-width: 65px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  color: #3c354f;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav ul a {
+  color: #3c354f;
+  text-decoration: none;
+}
+
+.nav-follow {
+  background: rgba(11, 2, 35, 0.1);
+  border-radius: 8px;
+  padding: 17px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-follow i {
+  font-size: 24px;
+}
+
+.nav-follow i:nth-child(2) {
+  margin-left: 5px;
+}
+
+/* Hero section */
+#hero-section {
+  background-image: url("./images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 20px;
+}
+
+.hero-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section-wrapper > div {
+  width: 50%;
+}
+
+.hero-info h1 {
+  color: var(--text-black);
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero-info h1 span {
+  font-size: 75px;
+  font-weight: 800;
+}
+
+.hero-description-wrapper {
+  margin: 24px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.hero-description {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.hero-description i {
+  width: 24px;
+}
+
+.hero-description span {
+  color: var(--text-gray);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.hero-img img {
+  max-width: 100%;
+}
+
+/* We are gamer section */
+#gamer-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
+  padding: 70px 0;
+}
+
+.gamer-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.gamer-img {
+  width: 60%;
+}
+
+.gamer-img img {
+  width: 100%;
+}
+
+.gamer-info {
+  width: 40%;
+  text-align: end;
+}
+
+.gamer-info h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.gamer-info p {
+  color: var(--text-gray);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 15px 0 25px;
+}
+
+.gamer-quote {
+  margin-top: 24px;
+}
+
+.gamer-quote > * {
+  display: block;
+  color: var(--text-gray);
+  line-height: 45px;
+}
+
+.gamer-quote span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.gamer-quote q {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+/* Online games section */
+#online-games-section {
+  text-align: center;
+}
+
+#online-games-section h2 {
+  color: var(--text-black);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#online-games-section > span {
+  color: var(--text-gray);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 10px 0 35px;
+  display: inline-block;
+}
+
+.online-games-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+}
+
+.online-games-wrapper > div {
+  width: 25%;
+}
+
+.online-game-img {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.online-game img {
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.online-game span {
+  color: var(--text-gray);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.online-game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 0.3s linear;
+  border: 4px solid #ff42a5;
+}
+
+.online-game-img:hover .online-game-overlay {
+  opacity: 1;
+}
+
+.online-game-overlay i {
+  color: white;
+  font-size: 30px;
+}
+
+.online-game-overlay > span {
+  color: #ff42a5;
+}
+
+/* Play instantly section */
+#play-instantly-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+#play-instantly-section > div {
+  width: 50%;
+}
+
+.play-instantly-info {
+  text-align: end;
+  max-width: 370px;
+}
+
+.play-instantly-info h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.play-instantly-info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 24px;
+}
+
+.play-instantly-img {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.play-instantly-img .main-img {
+  max-width: 100%;
+}
+
+.play-instantly-img .secondary-img {
+  max-width: 220px;
+  position: absolute;
+  bottom: -40px;
+  left: -80px;
+}
+
+/* Career section */
+#career-section {
+  /* background-image: ; */
+  background: url("./images/Vector\ 2.png"), var(--text-primary);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 100px 0;
+  margin-top: 160px;
+}
+
+.career-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.career-section-wrapper > div {
+  width: 50%;
+}
+
+.career-info {
+  color: white;
+}
+
+.career-info h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.career-info > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 24px 0 32px;
+}
+
+.career-description {
+  margin-bottom: 60px;
+}
+
+.career-description-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.career-img img {
+  width: 100%;
+}
+
+/* Category section */
+#category-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  margin-top: 100px;
+}
+
+#category-section > div {
+  width: auto;
+}
+
+.category {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50px;
+  outline: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.category:hover {
+  outline: 1.5px solid #ff42a5;
+}
+
+.category img {
+  max-width: 40px;
+}
+
+.category span {
+  color: var(--text-black);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.category:hover span {
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Footer section */
+
+footer {
+  background: var(--text-black);
+  padding: 90px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  max-width: 60px;
+}
+
+.footer-logo > span {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.footer-page-links {
+  margin: 50px 0;
+}
+
+.footer-page-links,
+.footer-additional-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-page-links a,
+.footer-additional-links a {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links {
+  color: white;
+  display: flex;
+  gap: 35px;
+  font-size: 25px;
+}
+
+.social-links i {
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+
+.social-links i:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.footer-additional-links {
+  margin: 65px 0 30px;
+}
+
+.footer-additional-links a {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.copyright {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1280px) {
+  .margin-bottom {
+    margin-bottom: 100px;
+  }
+  header {
+    padding: 35px 0;
+  }
+  nav .logo {
+    gap: 20px;
+  }
+
+  nav .logo > span {
+    font-size: 45px;
+  }
+
+  nav .logo img {
+    max-width: 85px;
+  }
+
+  nav ul {
+    font-size: 18px;
+  }
+
+  .hero-info h1 {
+    font-size: 48px;
+  }
+
+  .hero-info h1 span {
+    font-size: 95px;
+  }
+
+  .hero-description span {
+    font-size: 20px;
+  }
+
+  .btn-primary {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+
+  #gamer-section {
+    padding: 95px 0;
+  }
+
+  .gamer-info h2 {
+    font-size: 48px;
+  }
+
+  .gamer-info p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 24px 0 32px;
+  }
+
+  .gamer-quote span {
+    font-size: 24px;
+  }
+
+  .gamer-quote q {
+    font-size: 32px;
+  }
+
+  #online-games-section h2 {
+    font-size: 48px;
+  }
+
+  #online-games-section > span {
+    margin: 16px 0 48px;
+  }
+
+  .online-game span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #play-instantly-section {
+    gap: 250px;
+    justify-content: end;
+  }
+
+  .play-instantly-info h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .play-instantly-img .secondary-img {
+    max-width: 320px;
+    bottom: -70px;
+    left: -120px;
+  }
+
+  .category img {
+    max-width: 60px;
+  }
+
+  .category span {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 130px 0;
+  }
+
+  .footer-logo img {
+    max-width: 85px;
+  }
+
+  .footer-logo > span {
+    font-size: 45px;
+  }
+
+  .footer-page-links {
+    margin: 65px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section {
+    padding: 0 20px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 40px;
+  }
+
+  nav .logo > span {
+    font-size: 25px;
+  }
+
+  nav .logo img {
+    max-width: 45px;
+  }
+
+  nav ul {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .nav-follow {
+    padding: 11px 15px;
+    gap: 10px;
+  }
+
+  .hero-info h1 {
+    font-size: 35px;
+  }
+
+  .hero-info h1 span {
+    font-size: 65px;
+  }
+
+  .play-instantly-info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .play-instantly-img .secondary-img {
+    max-width: 50%;
+  }
+
+  #career-section {
+    margin-top: 90px;
+    padding: 60px 0;
+  }
+
+  .career-section-wrapper {
+    gap: 30px;
+  }
+
+  .career-info h2 {
+    font-size: 40px;
+  }
+
+  .career-info > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .career-description {
+    margin-bottom: 40px;
+  }
+
+  .career-description-list {
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  #category-section {
+    margin-top: 50px;
+  }
+
+  .footer-page-links {
+    margin: 30px 0;
+  }
+
+  .footer-additional-links {
+    margin: 40px 0 20px;
+  }
+
+  .footer-page-links,
+  .footer-additional-links {
+    gap: 25px;
+  }
+
+  .footer-page-links a,
+  .footer-additional-links a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #hero-section {
+    background-image: none;
+  }
+
+  .hero-section-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .hero-section-wrapper > div {
+    width: 100%;
+  }
+
+  .hero-info {
+    padding: 130px 0;
+    background-image: url("./images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% 100%;
+  }
+
+  .hero-info-wrapper {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .hero-description-wrapper {
+    gap: 10px;
+  }
+
+  .hero-description span {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 13px 33px;
+  }
+
+  #gamer-section {
+    padding: 0 0 40px;
+  }
+
+  .gamer-section-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gamer-img,
+  .gamer-info {
+    width: 100%;
+  }
+
+  .gamer-info {
+    text-align: center;
+  }
+
+  .online-games-wrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .online-games-wrapper > div {
+    width: calc(50% - 5px);
+  }
+
+  #play-instantly-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #play-instantly-section > div {
+    width: 100%;
+  }
+
+  .play-instantly-info {
+    text-align: center;
+  }
+
+  .play-instantly-img {
+    justify-content: center;
+  }
+
+  .play-instantly-img .main-img {
+    max-width: 70%;
+  }
+
+  .play-instantly-img .secondary-img {
+    max-width: 30%;
+    bottom: -20px;
+    left: 0px;
+  }
+
+  .career-section-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .career-section-wrapper > div {
+    width: 100%;
+  }
+
+  #category-section {
+    gap: 10px;
+  }
+
+  #category-section > div {
+    width: calc(33% - 15px);
+  }
+
+  .category span {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 60px 0;
+  }
+
+  .footer-logo {
+    gap: 10px;
+  }
+
+  .footer-logo > span {
+    font-size: 25px;
+  }
+
+  .footer-page-links,
+  .footer-additional-links,
+  .social-links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-page-links > a,
+  .social-links i {
+    width: calc(33% - 10px);
+    text-align: center;
+  }
+
+  .footer-additional-links > a {
+    text-align: center;
+    width: calc(50% - 10px);
+  }
+
+  .footer-page-links a,
+  .footer-additional-links a {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 0 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero-info {
+    padding: 50px 0;
+  }
+
+  .hero-button-wrapper {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    padding: 13px 25px;
+  }
+
+  .gamer-info h2 {
+    font-size: 30px;
+  }
+
+  .gamer-quote q {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  #online-games-section h2 {
+    font-size: 30px;
+  }
+
+  #online-games-section > span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .online-games-wrapper {
+    gap: 30px;
+  }
+
+  .online-games-wrapper > div {
+    width: 100%;
+  }
+
+  .online-game-img {
+    margin-bottom: 10px;
+  }
+
+  .play-instantly-info h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .play-instantly-info p {
+    margin-top: 10px;
+  }
+
+  .career-info {
+    text-align: center;
+  }
+
+  .career-info h2 {
+    font-size: 30px;
+  }
+
+  .career-info > p {
+    margin: 15px 0 30px;
+  }
+
+  #category-section {
+    margin-top: 70px;
+  }
+
+  #category-section > div {
+    width: calc(50% - 5px);
+  }
+}
